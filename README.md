@@ -18,4 +18,4 @@
 
 - в качестве шрифта можно использовать [Open Sans](https://fonts.google.com/?query=open&selection.family=Open+Sans:400,600,700)
 - кнопку "подробнее" можно вставить картинкой
-- для надписи, набранные КАПСОМ, писать в нормальном регистре и использовать [text-transform: uppercase](https://webref.ru/css/text-transform)
+- надписи, набранные КАПСОМ, писать в нормальном регистре и использовать [text-transform: uppercase](https://webref.ru/css/text-transform)
