@@ -1,6 +1,10 @@
 $redColor: #0d0ed3;
 $buttonSize: 18px;
 
-a {
-	border: 1px solid white;
+$brightBlue: #0035bc;
+$darkBlue: #293555;
+
+@mixin reset {
+	margin: 0;
+	padding: 0;
 }
