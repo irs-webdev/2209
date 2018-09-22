@@ -1,0 +1,58 @@
+
+@import 'vars';
+
+@mixin reset {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin rad($r) {
+	-webkit-border-radius: $r;
+	-o-border-radius: $r;
+	-moz-border-radius: $r * 2;
+	border-radius: $r;
+}
+
+body {
+	@include reset;
+	font-family: Arial, sans-serif;
+	background: #eee;
+	color: $redColor;
+}
+
+button {
+	color: white;
+	box-sizing: content-box;
+	background: $redColor;
+	border: 3px solid lighten($redColor, 15%);
+	@include reset;
+
+	font-size: $buttonSize;
+	height: $buttonSize * 2;
+	line-height: $buttonSize * 2;
+	min-width: 8 * $buttonSize;
+	border-radius: $buttonSize;
+	// @include rad($buttonSize);
+
+	&:hover {
+		background-color: lighten($redColor, 10%);
+	}
+
+	&:active {
+		background-color: darken($redColor, 10%);
+	}
+}
+
+.row {
+	display: flex;
+	width: 100%;
+
+	@for $i from 1 through 12 {
+		.col-#{$i} {
+			border: 1px dashed gray;
+			width: 100% * $i / 12;
+		}
+	}
+}
+
+@import 'nav.scss';

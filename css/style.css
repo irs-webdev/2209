@@ -1,0 +1,112 @@
+a {
+  border: 1px solid white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #eee;
+  color: #0d0ed3;
+}
+
+button {
+  color: white;
+  box-sizing: content-box;
+  background: #0d0ed3;
+  border: 3px solid #3a3bf3;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  height: 36px;
+  line-height: 36px;
+  min-width: 144px;
+  border-radius: 18px;
+}
+button:hover {
+  background-color: #2223f1;
+}
+button:active {
+  background-color: #0a0ba3;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.row .col-1 {
+  border: 1px dashed gray;
+  width: 8.3333333333%;
+}
+.row .col-2 {
+  border: 1px dashed gray;
+  width: 16.6666666667%;
+}
+.row .col-3 {
+  border: 1px dashed gray;
+  width: 25%;
+}
+.row .col-4 {
+  border: 1px dashed gray;
+  width: 33.3333333333%;
+}
+.row .col-5 {
+  border: 1px dashed gray;
+  width: 41.6666666667%;
+}
+.row .col-6 {
+  border: 1px dashed gray;
+  width: 50%;
+}
+.row .col-7 {
+  border: 1px dashed gray;
+  width: 58.3333333333%;
+}
+.row .col-8 {
+  border: 1px dashed gray;
+  width: 66.6666666667%;
+}
+.row .col-9 {
+  border: 1px dashed gray;
+  width: 75%;
+}
+.row .col-10 {
+  border: 1px dashed gray;
+  width: 83.3333333333%;
+}
+.row .col-11 {
+  border: 1px dashed gray;
+  width: 91.6666666667%;
+}
+.row .col-12 {
+  border: 1px dashed gray;
+  width: 100%;
+}
+
+a {
+  border: 1px solid white;
+}
+
+nav.top {
+  width: 100%;
+  background-color: #070873;
+}
+nav.top ul {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+}
+nav.top ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+nav.top ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
