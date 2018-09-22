@@ -1,0 +1,84 @@
+@import 'vars';
+
+header {
+	height: 364px;
+	width: 100%;
+
+	overflow: auto;
+
+	background-color: #1a367d;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+
+}
+
+
+.top-bar {
+	width: 100%;
+	height: 87px;
+	margin-top: 28px;
+	background-image: linear-gradient(to top, #d8e3f9, white);
+
+	.container {
+		width: 1200px;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	ul {
+		@include reset;
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			@include reset;
+			display: block;
+			font-weight: 600;
+			text-transform: uppercase;
+
+			a {
+				text-decoration: none;
+				color: $darkBlue;
+				font-size: 14px;
+				font-weight: 700;	
+			}
+
+			&::after {
+				content: '';
+				display: inline-block;
+				border: 3px solid $brightBlue;
+				width: 4px;
+				height: 4px;
+				box-sizing: content-box;
+				margin: 0 20px;
+			}
+
+
+			&:last-child::after {
+				content: none;
+			}
+		}
+	}
+}
+
+.phone-container {
+	text-align: right;
+
+	.phone {
+		font-size: 27px;
+		color: $brightBlue;
+		display: block;
+		font-weight: 700;
+	}
+
+	.callback {
+		text-decoration: none;
+		color: $darkBlue;
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
